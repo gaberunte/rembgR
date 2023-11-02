@@ -3,10 +3,8 @@ Functionality and workflows for the [rembg tool](https://github.com/danielgatis/
 
 | <img src="/example_photos/coffee_MartaDzedyshko.jpg" alt="" width="40%"> | <img src="/example_photos/coffee_MartaDzedyshko_trimmed.jpg" alt="" width="40%"> |
 | <img src="/example_photos/untrimmed/skier_ToddTrapani.jpg" alt="" width="40%"> | <img src="/example_photos/trimmed/skier_ToddTrapani.png" alt="" width="40%"> |
-| <img src="/example_photos/untrimmed/palm_TylerLastovich.jpg" alt="" width="40%"> | <img src="(/example_photos/trimmed/palm_TylerLastovich.png" alt="" width="40%"> |
 | <img src="/example_photos/untrimmed/apple.jpg" alt="" width="40%"> | <img src="/example_photos/trimmed/apple.png" alt="" width="40%"> |
 | <img src="/example_photos/untrimmed/parrot_HansMartha.jpg" alt="" width="40%"> | <img src="/example_photos/trimmed/parrot_HansMartha.png" alt="" width="40%"> |
-| <img src="/example_photos/trimmed/raptor_JuanFelipeRamírez.jpg" alt="" width="40%"> | <img src="/example_photos/trimmed/raptor_JuanFelipeRamírez.png" alt="" width="40%"> |
 
 
 
