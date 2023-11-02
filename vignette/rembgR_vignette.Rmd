@@ -1,0 +1,62 @@
+---
+title: "rembgR Vignette"
+author: "Gabe Runte"
+date: "2023-11-02"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(here)
+library(jpeg) #image processing
+library(raster) #image processing
+library(sf) #image processing
+library(doParallel) #Paralleliz
+source(here("functions.R"))
+```
+
+This project came about as a result of my need to isolate photos of plants from their backgrounds. We took photos of seedlings using a R,G,NIR camera for the purposes of calculating NDVI over time. This made sense because it is difficult to use common plant physiology tools to measure performance of small needle-leaved seedlings (this was prior to the recent LiCor needle attachment!). 
+We attempted to use thresholds in reflectance to isolate plants from their environment but results were mixed. So below is a prief workflow showing the utility of this toolkit for isolating plants and visualizing NDVI in a greenhouse context! Niche, I know. 
+```{r}
+#Following the same steps as in the rembgR_demo.Rmd file
+directory = here("vignette", "seedling_photos")
+folder_in = "raw"
+folder_out = "raw_trimmed"
+rembg(photo_directory = directory, input_path = folder_in, output_path = folder_out)
+```
+
+Now, I go through and pull back in each of the images and plot their NDVI values before and after background removal to show the utility! 
+```{r}
+#First, I need to list all of the photos
+raw_photos = list.files(paste(directory, folder_in, sep = "/"))
+trimmed_photos = list.files(paste(directory, folder_out, sep = "/"))
+
+#Next I make a dataframe of the photos, their file paths, and which group they belong to
+all_photos = tibble(photo = raw_photos) %>% 
+  mutate(path = paste(paste(directory, folder_in, sep = "/"), photo, sep = "/")) %>%
+  mutate(class = "raw") %>% 
+  bind_rows(tibble(photo = trimmed_photos) %>% 
+  mutate(path = paste(paste(directory, folder_out, sep = "/"), photo, sep = "/")) %>% 
+    mutate(class = "trimmed")
+  )
+
+#Finally, I run a for() loop that loads the image, calculates the NDVI, and plots the output. We should see two plots for each seedling, one untrimmed and one trimmed. 
+for(i in 1:length(all_photos$photo)){
+
+aq = stack(all_photos$path[i])
+bq = brick(aq)
+ndvi <- (bq[[3]] - bq[[1]]) / (bq[[3]] + bq[[1]])
+
+min_color_ndvi <- -.25
+max_color_ndvi <- .25
+
+# Create a color palette
+color_ndvi <- colorRampPalette(c("orange", "darkgreen"))(256)
+
+plot(ndvi, col = color_ndvi, breaks = seq(min_color_ndvi, max_color_ndvi, length.out = length(color_ndvi)), axes = FALSE, xlim = c(0,4000), legend=FALSE)}
+
+
+```
+
