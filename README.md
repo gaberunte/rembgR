@@ -1,10 +1,13 @@
 # rembgR
 Functionality and workflows for the [rembg tool](https://github.com/danielgatis/rembg) in R. See original package by [@danielgatis](https://github.com/danielgatis) for more information!
 
-| ![](/example_photos/untrimmed/coffee_MartaDzedyshkop.jpg) | ![](/example_photos/trimmed/coffee_MartaDzedyshkop.jpg) |
-| ![](/example_photos/untrimmed/skier_ToddTrapani.jpg) | ![](/example_photos/trimmed/skier_ToddTrapani.jpg) |
-| ![](/example_photos/untrimmed/snowytree_SimonBerger.jpg) | ![](/example_photos/trimmed/snowytree_SimonBerger.jpg) |
-| ![](/example_photos/untrimmed/biker_cottonbrostudios.jpg) | ![](/example_photos/trimmed/biker_cottonbrostudios.jpg) |
+| <img src="/example_photos/coffee_MartaDzedyshkop.jpg" alt="" width="200" height="150"> | <img src="/example_photos/coffee_MartaDzedyshkop_trimmed.jpg" alt="" width="200" height="150"> |
+| <img src="/example_photos/untrimmed/skier_ToddTrapani.jpg" alt="" width="200" height="150"> | <img src="/example_photos/trimmed/skier_ToddTrapani.png" alt="" width="200" height="150"> |
+| <img src="/example_photos/untrimmed/palm_TylerLastovich.jpg" alt="" width="200" height="150"> | <img src="(/example_photos/trimmed/palm_TylerLastovich.png" alt="" width="200" height="150"> |
+| <img src="/example_photos/untrimmed/apple.jpg" alt="" width="200" height="150"> | <img src="/example_photos/trimmed/apple.png" alt="" width="200" height="150"> |
+| <img src="/example_photos/untrimmed/palm_TylerLastovich.jpg" alt="" width="200" height="150"> | <img src="/example_photos/trimmed/palm_TylerLastovich.png" alt="" width="200" height="150"> |
+| <img src="/example_photos/untrimmed/raptor_JuanFelipeRamírez.jpg" alt="" width="200" height="150"> | <img src="/example_photos/trimmed/raptor_JuanFelipeRamírez.png" alt="" width="200" height="150"> |
+
 
 This repository relies heavily on functionality provided by [Docker](https://www.docker.com/) to allow users to run the rembg model on any system (hopefully). For the code herein to run successfully on a user's machine, they should have Docker already installed with functionality through the command line. 
 
