@@ -1,0 +1,43 @@
+---
+title: "rembgR demo"
+author: "Gabe Runte"
+date: "2023-11-02"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+source("./functions.R")
+```
+
+To run the background removal functions in this repository, a machine must first have launched Docker. To do so, we can use the following command:
+
+```{r}
+launch_docker()
+```
+
+To remove the background on a whole folder of images, we can use the default `rembg()` function. We need to define three inputs either in the function or prior:
+1. A directory for all photos. This is provided as a volume to Docker.
+2. A file path to the folder, within the directory, holding untrimmed images.
+3. A file path to another folder that will hold the trimmed images. 
+
+```{r}
+directory = "./example_photos"
+folder_in = "untrimmed"
+folder_out = "trimmed"
+rembg(photo_directory = directory, input_path = folder_in, output_path = folder_out)
+```
+
+The same function, `rembg()`, can also be directed to individual images by changing the default `type = "folder"` argument to `type = "file"`. Again we must define 3 inputs:
+1. A directory for the photo. This is provided as a volume to Docker.
+2. A file path to the image within the directory.
+3. A file path for the image we want to write. 
+
+```{r}
+directory = "./example_photos"
+file_in = "coffee_MartaDzedyshko.jpg"
+file_out = "coffee_MartaDzedyshko_trimmed.jpg"
+rembg(photo_directory = directory, type = "file", input_path = file_in, output_path = file_out)
+```
+
