@@ -1,12 +1,12 @@
 # rembgR
 Functionality and workflows for the [rembg tool](https://github.com/danielgatis/rembg) in R. See original package by [@danielgatis](https://github.com/danielgatis) for more information!
 
-| <img src="/example_photos/coffee_MartaDzedyshko.jpg" alt="" width="200" height="150"> | <img src="/example_photos/coffee_MartaDzedyshko_trimmed.jpg" alt="" width="200" height="150"> | {br}
-| <img src="/example_photos/untrimmed/skier_ToddTrapani.jpg" alt="" width="200" height="150"> | <img src="/example_photos/trimmed/skier_ToddTrapani.png" alt="" width="200" height="150"> |
-| <img src="/example_photos/untrimmed/palm_TylerLastovich.jpg" alt="" width="200" height="150"> | <img src="(/example_photos/trimmed/palm_TylerLastovich.png" alt="" width="200" height="150"> |
-| <img src="/example_photos/untrimmed/apple.jpg" alt="" width="200" height="150"> | <img src="/example_photos/trimmed/apple.png" alt="" width="200" height="150"> |
-| <img src="/example_photos/untrimmed/parrot_HansMartha.jpg" alt="" width="200" height="150"> | <img src="/example_photos/trimmed/parrot_HansMartha.png" alt="" width="200" height="150"> |
-| <img src="/example_photos/untrimmed/raptor_JuanFelipeRamírez.jpg" alt="" width="200" height="150"> | <img src="/example_photos/trimmed/raptor_JuanFelipeRamírez.png" alt="" width="200" height="150"> |
+| <img src="/example_photos/coffee_MartaDzedyshko.jpg" alt="" width="400" height="560"> | <img src="/example_photos/coffee_MartaDzedyshko_trimmed.jpg" alt="" width="400" height="560"> | {br}
+| <img src="/example_photos/untrimmed/skier_ToddTrapani.jpg" alt="" width="400" height="560"> | <img src="/example_photos/trimmed/skier_ToddTrapani.png" alt="" width="400" height="560"> |
+| <img src="/example_photos/untrimmed/palm_TylerLastovich.jpg" alt="" width="400" height="560"> | <img src="(/example_photos/trimmed/palm_TylerLastovich.pnh" alt="" width="400" height="560"> |
+| <img src="/example_photos/untrimmed/apple.jpg" alt="" width="400" height="560"> | <img src="/example_photos/trimmed/apple.png" alt="" width="400" height="560"> |
+| <img src="/example_photos/untrimmed/parrot_HansMartha.jpg" alt="" width="400" height="560"> | <img src="/example_photos/trimmed/parrot_HansMartha.png" alt="" width="400" height="560"> |
+| <img src="/example_photos/untrimmed/raptor_JuanFelipeRamírez.jpg" alt="" width="400" height="560"> | <img src="/example_photos/trimmed/raptor_JuanFelipeRamírez.png" alt="" width="400" height="560"> |
 
 
 This repository relies heavily on functionality provided by [Docker](https://www.docker.com/) to allow users to run the rembg model on any system (hopefully). For the code herein to run successfully on a user's machine, they should have Docker already installed with functionality through the command line. 
