@@ -1,21 +1,12 @@
 # rembgR
 Functionality and workflows for the [rembg tool](https://github.com/danielgatis/rembg) in R. See original package by [@danielgatis](https://github.com/danielgatis) for more information!
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center;">
-  <div style="width: 40%; padding: 10px;">
-    <img src="/example_photos/coffee_MartaDzedyshko.jpg" alt="Image 1" style="width: 100%; max-width: 100%;">
-  </div>
-  <div style="width: 40%; padding: 10px;">
-    <img src="/example_photos/coffee_MartaDzedyshko_trimmed.jpg" alt="Image 2" style="width: 100%; max-width: 100%;">
-  </div>
-  <div style="width: 40%; padding: 10px;">
-    <img src="/example_photos/untrimmed/skier_ToddTrapani.jpg" alt="Image 3" style="width: 100%; max-width: 100%;">
-  </div>
-  <div style="width: 40%; padding: 10px;">
-    <img src="/example_photos/trimmed/skier_ToddTrapani.png" alt="Image 4" style="width: 100%; max-width: 100%;">
-  </div>
-</div>
-
+| <img src="/example_photos/coffee_MartaDzedyshko.jpg" alt="" width="40%"> | <img src="/example_photos/coffee_MartaDzedyshko_trimmed.jpg" alt="" width="40%"> |
+| <img src="/example_photos/untrimmed/skier_ToddTrapani.jpg" alt="" width="40%"> | <img src="/example_photos/trimmed/skier_ToddTrapani.png" alt="" width="40%"> |
+| <img src="/example_photos/untrimmed/palm_TylerLastovich.jpg" alt="" width="40%"> | <img src="(/example_photos/trimmed/palm_TylerLastovich.pnh" alt="" width="40%"> |
+| <img src="/example_photos/untrimmed/apple.jpg" alt="" width="40%"> | <img src="/example_photos/trimmed/apple.png" alt="" width="40%"> |
+| <img src="/example_photos/untrimmed/parrot_HansMartha.jpg" alt="" width="40%"> | <img src="/example_photos/trimmed/parrot_HansMartha.png" alt="" width="40%"> |
+| <img src="/example_photos/trimmed/raptor_JuanFelipeRamírez.jpg" alt="" width="40%"> | <img src="/example_photos/trimmed/raptor_JuanFelipeRamírez.png" alt="" width="40%"> |
 
 | ![Image 1](/example_photos/coffee_MartaDzedyshko.jpg) | ![Image 2](/example_photos/coffee_MartaDzedyshko_trimmed.jpg) |
 | ![Image 3](/example_photos/untrimmed/skier_ToddTrapani.jpg) | ![Image 4](/example_photos/trimmed/skier_ToddTrapani.png) |
