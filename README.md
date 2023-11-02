@@ -1,7 +1,7 @@
 # rembgR
 Functionality and workflows for the [rembg tool](https://github.com/danielgatis/rembg) in R. See original package by [@danielgatis](https://github.com/danielgatis) for more information!
 
-| <img src="/example_photos/coffee_MartaDzedyshkop.jpg" alt="" width="200" height="150"> | <img src="/example_photos/coffee_MartaDzedyshkop_trimmed.jpg" alt="" width="200" height="150"> |
+| <img src="/example_photos/coffee_MartaDzedyshko.jpg" alt="" width="200" height="150"> | <img src="/example_photos/coffee_MartaDzedyshko_trimmed.jpg" alt="" width="200" height="150"> |
 | <img src="/example_photos/untrimmed/skier_ToddTrapani.jpg" alt="" width="200" height="150"> | <img src="/example_photos/trimmed/skier_ToddTrapani.png" alt="" width="200" height="150"> |
 | <img src="/example_photos/untrimmed/palm_TylerLastovich.jpg" alt="" width="200" height="150"> | <img src="(/example_photos/trimmed/palm_TylerLastovich.png" alt="" width="200" height="150"> |
 | <img src="/example_photos/untrimmed/apple.jpg" alt="" width="200" height="150"> | <img src="/example_photos/trimmed/apple.png" alt="" width="200" height="150"> |
